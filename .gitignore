@@ -1,0 +1,40 @@
+# Ambientes virtuais criados pelo Poetry ou Python padrão
+.venv/
+venv/
+ENV/
+env/
+
+# Arquivos de cache e compilação do Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+# Arquivos do sistema operacional ou IDE (opcional)
+.DS_Store
+.vscode/
+.idea/
+.python-version
+
+# Arquivos de estado do Terraform (contêm dados sensíveis em texto puro)
+infra/*.tfstate
+infra/*.tfstate.*
+
+# Arquivos de log de travamento (Crash logs)
+infra/crash.log
+infra/crash.*.log
+
+# Arquivos de variáveis locais (geralmente contêm senhas e tokens)
+infra/*.tfvars
+infra/*.tfvars.json
+
+# Arquivo de configuração de variáveis personalizadas do CLI
+infra/.terraformrc
+infra/terraform.rc
+
+# Diretório de trabalho do Terraform (contém os arquivos binários dos providers baixados)
+infra/.terraform/
+
+# Arquivo de trava de provedores (opcional: remova se quiser travar as versões no Git)
+infra/.terraform.lock.hcl

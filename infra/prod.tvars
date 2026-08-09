@@ -1,0 +1,6 @@
+aws_region = "us-east-1"
+project_name = "portfolio-ecommerce"
+environment = "prod"
+
+glue_worker_type = "G.3X"
+glue_number_of_workers = 5
